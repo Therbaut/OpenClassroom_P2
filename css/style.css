@@ -170,132 +170,162 @@
         margin-left: 15px;
     }
 
-   /*---------------------------------------------Section Hébergement -------------------------------------------------------*/
+    /*---------------------------------------------Section Hébergement -------------------------------------------------------*/
+
+    .section-hebergements {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
 
 
-.section-hebergements {
-    display: flex;
-    flex-wrap: wrap;
-}
+    /*---------------------------------------------Zone hébergement -------------------------------------------------------*/
 
-.hebergements-marseilles {
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    width: 60%;
-    margin: 15px;
-    padding: 15px;
-}
-
-.marseille {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-       
-}
-
-.marseille a {
-    text-decoration: none;
-}
+    .hebergements-marseille {
+        display: flex;
+        width: 66%;
+        background-color: #f2f2f2;
+        border-radius: 15px;     
+    }
 
 
-.card-body {
-    width: 200px;
-    background-color: white;
-    margin: 15px;
-    border-radius: 15px;    
-}
 
-.card-image {
-    height: 125px;
-    position: relative;
-    overflow: hidden;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
+    .informations {
+        margin-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 
-.card-image img {
-    width: 100%;
-    top: 50%;
-    left: 50%;
-}
-
-.card-titre h3 {
-    font-size: 15px;
-    margin-left: 10px; 
-}
-
-.card-tarif {
-    font-size: 15px;
-    margin-left: 10px; 
-}
-
-.card-note {
-    color: #0065FC;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.etoile-grise {
-    color: #f2f2f2;
+    .marseille {
+        display: flex;
+        flex-wrap: wrap;       
+        justify-content: space-around;
+    }
     
-}
+    .marseille a {
+        text-decoration: none;
 
-.marseille a:hover {
-    background-color: #deebff;
-    border-radius: 25px;
-    color: #0065FC;
-}
+    }
+    
+    .marseille p {
+        font-size: 10px;
 
-.informations {
-    margin-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
+    }
+    
+    .card-body {
+        width: 250px;
+        height: 200px;
+        background-color: white;
+        margin: 15px;
+        border-radius: 15px;
+    }
 
-/*---------------------------------------------Section Hébergement populaire -------------------------------------------------------*/
 
-.populaires {
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    width: 33%;
-    margin: 15px;
-}
+    
+    .card-image {
+        height: 125px;
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    
+    .card-image img {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+    }
+    
+    .card-titre h3 {
+        font-size: 10px;
+        margin-left: 10px; 
+    }
+    
+    .card-tarif {
+        font-size: 15px;
+        margin-left: 10px; 
+    }
+    
+    .card-note {
+        color: #0065FC;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .etoile-grise {
+        color: #f2f2f2;
+        
+    }
+    
+    .marseille a:hover {
+        background-color: #deebff;
+        border-radius: 25px;
+        color: #0065FC;
+    }
 
-.heberg-populaire a {
-    text-decoration: none;
-}
+    .afficher-plus a {
+        text-decoration: none;
+        font-weight:600;
+        margin-left: 20px;
+        padding-top: 15px;
+    }
 
-.card-body-populaire {
-    width: 400px;
-    background-color: white;
-    margin: 15px;
-    border-radius: 15px; 
-    display: flex;   
-}
+    /*---------------------------------------------Zone populaire -------------------------------------------------------*/
 
-.card-image-pop{
-    width: 200px;
-    position: relative;
-    overflow: hidden;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
+    .populaires-marseille {
+        display: flex;
+        width: 32%;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        justify-content: space-around;
+    
+    }
 
-.card-image-pop img {
-    width: 100%;
-    top: 50%;
-    left: 50%;
-}
+    .informations-populaire {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 
-.informations-populaire {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
+    .heberg-populaire a {
+        text-decoration: none;
+    }
 
+    .heberg-populaire p {
+        font-size: 10px;
+    }
+
+    
+    .card-body-populaire {
+        height: 125px;
+        width: 280px;
+        background-color: white;
+        margin: 30px;
+        border-radius: 15px; 
+        display: flex;   
+    }
+    
+    .card-image-pop{
+        width: 125px;
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    
+    .card-image-pop img {
+        height: 100%;
+    }
+
+    .heberg-populaire a:hover {
+        background-color: #deebff;
+        border-radius: 25px;
+        color: #0065FC;
+    }
 
     /*---------------------------------------------Media Queries desktop -------------------------------------------------------*/
 @media screen and (min-width:992px){
@@ -320,6 +350,27 @@
 
     #loupe {
         display: none;
+    }
+
+    .section-hebergements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-marseille {
+        display: flex;
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 15px;     
+    }
+
+    .populaires-marseille {
+        display: flex;
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        justify-content: space-around;
+    
     }
 }
 
@@ -390,13 +441,24 @@
         color: white;
     }
 
-    .populaires {
+    .section-hebergements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-marseille {
+        display: flex;
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 15px;     
+    }
+
+    .populaires-marseille {
+        display: flex;
+        width: 100%;
         background-color: #f2f2f2;
         border-radius: 15px;
-        width: 33%;
-        margin: 15px;
-        display: flex;
-        flex-wrap: wrap;
-    }
+        justify-content: space-around;
     
+    }
 }
