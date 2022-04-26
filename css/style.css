@@ -243,7 +243,7 @@ p {
     font-size: 15px;
     margin-left: 10px;
     padding-top: 0px;
-    
+
 }
 
 .card-note {
@@ -285,7 +285,7 @@ p {
     padding-top: 15px;
     padding-bottom: 15px;
     align-items: center;
-    
+
 }
 
 .card-populaire {
@@ -337,11 +337,12 @@ p {
 /*-------------------------------------------Zone Activités --------------------------------*/
 .activites {
     display: flex;
-    
+    justify-content: space-around;
+
 }
 
 .petite-card {
-    display: flex;
+
     flex-wrap: wrap;
 }
 
@@ -491,7 +492,7 @@ footer li {
     nav ul {
         padding-left: 0px;
         display: flex;
-        
+
     }
 
     nav li {
