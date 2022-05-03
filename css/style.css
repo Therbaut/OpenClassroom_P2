@@ -595,9 +595,7 @@ footer a {
         padding-bottom: 25px;
     }
 
-    footer li {
-        margin-right: 75px;
-    }
+    
 }
 
 
@@ -804,5 +802,9 @@ footer a {
         height: 70%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+    }
+
+    footer li {
+        margin-right: 75px;
     }
 }
