@@ -13,6 +13,10 @@ body {
     margin: 0px;
 }
 
+header {
+    margin: 30px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -37,19 +41,20 @@ nav a {
     text-decoration: none;
     padding-left: 30px;
     padding-right: 30px;
+    font-weight: 600;
 }
 
 nav a:hover {
     border-top: solid 4px #0065FC;
     color: #0065FC;
-    padding-top: 10px;
+    padding-top: 42px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 h1 {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 h2 {
@@ -68,6 +73,11 @@ p {
     position: relative;
     display: flex;
     align-items: center;
+    margin: 20px;
+}
+
+.search {
+    display: flex;
 }
 
 #localisation {
@@ -83,8 +93,12 @@ p {
 
 #recherche {
     width: auto;
-    height: 45px;
     align-items: center;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    border: solid 2px #f2f2f2;
+    border-right: none;
 }
 
 #bouton-recherche {
@@ -98,6 +112,8 @@ p {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     align-items: center;
+    margin: 0;
+    padding: 0%;
 }
 
 /* --------------------------------------------------  filtres--------------------------------------------------*/
@@ -106,18 +122,25 @@ p {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: 15px;
 }
 
+.filtres h2 {
+    font-weight: 800;
+}
 
 .elements-filtres {
     display: flex;
     align-items: center;
-    border: solid 2px #f2f2f2;
+    outline: solid 2px #deebff;
+    outline-offset: -3px;
+    border-left: none;
     border-radius: 27px;
     justify-content: center;
     margin-left: 15px;
     margin-top: 7px;
     margin-bottom: 7px;
+    
 }
 
 .icone-filtre {
@@ -138,6 +161,8 @@ p {
     text-decoration: none;
     color: black;
     padding-right: 15px;
+    font-weight: 800;
+    
 }
 
 .elements-filtres a:hover {
@@ -154,7 +179,7 @@ p {
 .info {
     display: flex;
     align-items: baseline;
-    margin-left: 5px;
+    margin: 15px;
 }
 
 .info i {
@@ -192,36 +217,56 @@ p {
     padding-bottom: 15px;
 }
 
-.marseille {
+#marseille {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.marseille a {
+#marseille a {
     text-decoration: none;
 
 }
 
-.marseille p {
-    font-size: 10px;
+.informations h2 {
+    font-size: 20px;
 
 }
 
+.card-body h3 {
+    font-size: 17px;
+    font-weight: 800;
+    margin: 5px 0 5px 0px;
+}
+
+.card-titre h3 {
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.card-body p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 5px 0px;
+}
+
 .card-body {
-    width: 250px;
-    height: 225px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
     background-color: white;
     margin: 15px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px 2px #2c2525;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
     border: solid 5px white;
 }
 
 
 
 .card-image {
-    height: 125px;
+    height: 167px;
     position: relative;
     overflow: hidden;
     border-top-left-radius: 15px;
@@ -233,11 +278,7 @@ p {
     object-fit: cover;
 }
 
-.card-titre h3 {
-    font-size: 15px;
-    margin-left: 10px;
-    padding-bottom: 2px;
-}
+
 
 .card-tarif {
     font-size: 15px;
@@ -248,7 +289,7 @@ p {
 
 .card-note {
     color: #0065FC;
-    margin: 10px;
+    margin: 0 0 10px 10px;
     display: flex;
     align-items: center;
 }
@@ -258,9 +299,9 @@ p {
 
 }
 
-.marseille a:hover {
+#marseille a:hover {
     background-color: #deebff;
-    border-radius: 25px;
+    border-radius: 15px;
     color: #0065FC;
 }
 
@@ -285,36 +326,53 @@ p {
     padding-top: 15px;
     padding-bottom: 15px;
     align-items: center;
+}
 
+.informations-populaire h2 {
+    font-size: 20px;
 }
 
 .card-populaire {
 
     flex-wrap: wrap;
-
 }
 
-.heberg-populaire a {
+.card-populaire h3 {
+    font-size: 17px;
+    font-weight: 800;
+    padding-left: 15px;
+}
+
+.card-populaire a {
+    display: flex;
     text-decoration: none;
 }
 
+
+
 .heberg-populaire p {
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 5px;
 }
 
+.populaires {
+    width: 90%;
+}
 
 .card-body-populaire {
     height: 180px;
+    width: 90%;
     background-color: white;
     margin: 15px;
     border-radius: 15px;
     display: flex;
-    box-shadow: 0px 0px 15px 2px #2c2525;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
     border: solid 5px white;
 }
 
 .card-image-pop {
-    width: 125px;
+    width: 40%;
     position: relative;
     overflow: hidden;
     border-top-left-radius: 15px;
@@ -333,64 +391,120 @@ p {
     color: #0065FC;
 }
 
-
-/*-------------------------------------------Zone Activités --------------------------------*/
-.activites {
+.card-note-populaires {
+    color: #0065FC;
+    margin-top: 50px;
+    margin-left: 10px;
     display: flex;
-    justify-content: space-around;
-
 }
 
-.petite-card {
 
+/*-------------------------------------------Zone Activités --------------------------------*/
+
+.activites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.activites a {
+    text-decoration: none;
+}
+
+.activites a:hover {
+    background-color: #deebff;
+    color: #0065FC;
+}
+
+.activites h3 {
+    font-size: 17px;
+    font-weight: 800;
+    padding-left: 15px;
+}
+
+.card-body-activite {
+    display: flex;
     flex-wrap: wrap;
 }
 
-.grande-card-body-activite {
-    width: 250px;
-    height: 400px;
+.grande-card {
+    height: 500px;
+    width: 325px;
     background-color: white;
     margin: 15px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px 2px #2c2525;
+    display: flex;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
 }
 
+.grande-card img {
+    width: 100%;
+    object-fit: cover;
+    height: 88%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
-.petite-card-body-activite {
-    width: 250px;
-    height: 200px;
+.deuxtier-card {
+    height: 320px;
+    width: 325px;
     background-color: white;
     margin: 15px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px 2px #2c2525;
+    display: flex;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
 }
 
-.grande-card-image-activites {
-    height: 350px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.grande-card-image-activites img {
+.deuxtier-card img {
+    width: 325px;
     object-fit: cover;
-    width: 100%;
-    height: 80%;
+    height: 85%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-.petite-card-image-activites img {
-    object-fit: cover;
-    width: 100%;
-    height: 80%;
-}
-
-.petite-card-image-activites {
-    height: 150px;
-    position: relative;
-    overflow: hidden;
+.untier-card {
+    height: 160px;
+    width: 325px;
+    background-color: white;
+    margin: 15px;
     border-radius: 15px;
-
+    display: flex;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
 }
+
+.untier-card img {
+    width: 325px;
+    object-fit: cover;
+    height: 70%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-empile {
+    display: flex;
+    flex-direction: column;
+}
+
+.midle-card {
+    height: 240px;
+    width: 325px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
+}
+
+.midle-card img {
+    width: 325px;
+    object-fit: cover;
+    height: 80%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
 
 /*----------------------------------------------Footer----------------------------------------------------------------------*/
 
@@ -399,16 +513,28 @@ footer {
     flex-wrap: wrap;
     background-color: #f2f2f2;
     padding: 0px;
+    margin: 0px;
 }
 
 footer li {
     list-style: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 150px;
 }
 
+footer h4 {
+    margin-bottom: 40px;
+}
 
+footer a {
+    text-decoration: none;
+}
 
 /*---------------------------------------------Media Queries desktop -------------------------------------------------------*/
 @media screen and (min-width:992px) {
+
+   
     /* barre de recherche */
 
     #loupe {
@@ -455,9 +581,10 @@ footer li {
     .hebergements-marseille {
         display: flex;
         width: 100%;
-        background-color: #f2f2f2;
         border-radius: 15px;
     }
+
+
 
     .populaires-marseille {
         display: flex;
@@ -465,6 +592,11 @@ footer li {
         background-color: #f2f2f2;
         border-radius: 15px;
         justify-content: space-around;
+        padding-bottom: 25px;
+    }
+
+    footer li {
+        margin-right: 75px;
     }
 }
 
@@ -476,15 +608,18 @@ footer li {
 @media screen and (max-width:768px) {
     /* Entête du site */
 
-    body {
+    header {
         margin: 0px;
     }
+
+
 
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         border-bottom: solid 4px #f2f2f2;
+        margin: 0px;
     }
 
 
@@ -492,28 +627,35 @@ footer li {
     nav ul {
         padding-left: 0px;
         display: flex;
-
     }
 
     nav li {
         list-style: none;
+        width: 50%;
+
     }
 
     nav a:hover {
         border-top: none;
-        border-bottom: solid 2px #0065FC;
+        border-bottom: solid 4px #0065FC;
         padding-bottom: 15px;
         padding-top: none;
     }
 
-    h1 {
+    header h1 {
         font-size: 20px;
         font-weight: bold;
+        margin-left: 15px;
+    }
+
+    header p {
+        margin-left: 15px;
     }
 
     #barre-recherche {
         box-sizing: border-box;
         position: relative;
+        width: 100%;
     }
 
     #bouton-recherche {
@@ -535,8 +677,15 @@ footer li {
         height: 50px;
         border-radius: 15px;
         color: white;
-        margin-top: 10px;
+    }
 
+
+    .populaires-marseille {
+        display: flex;
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        justify-content: space-around;
     }
 
     .section-hebergements {
@@ -544,29 +693,116 @@ footer li {
         flex-direction: column-reverse;
     }
 
-
     .hebergements-marseille {
         display: flex;
         width: 100%;
+        border-radius: 15px;
     }
 
-    .populaires-marseille {
+
+
+    .card-body {
         display: flex;
-        width: 100%;
-        background-color: #f2f2f2;
-        justify-content: space-around;
-
+        flex-direction: column;
+        width: 80%;
+        height: 250px;
     }
 
-    /*-----------------------sections activités------------------------*/
-    .activites {
+    .card-body img {
+        object-fit: cover;
+        height: 90%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .card-body a {
+        margin: 0px;
+    }
+
+
+    #marseille {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .petite-card {
+
+    /*-----------------------sections activités------------------------*/
+
+    .grande-card {
+        height: 180px;
+        width: 325px;
+        background-color: white;
+        margin: 15px;
+        border-radius: 15px;
         display: flex;
-        justify-content: center;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
+    }
+
+    .grande-card img {
+        width: 325px;
+        object-fit: cover;
+        height: 70%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .deuxtier-card {
+        height: 180px;
+        width: 325px;
+        background-color: white;
+        margin: 15px;
+        border-radius: 15px;
+        display: flex;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
+    }
+
+    .deuxtier-card img {
+        width: 325px;
+        object-fit: cover;
+        height: 70%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .untier-card {
+        height: 180px;
+        width: 325px;
+        background-color: white;
+        margin: 15px;
+        border-radius: 15px;
+        display: flex;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
+    }
+
+    .untier-card img {
+        width: 325px;
+        object-fit: cover;
+        height: 70%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .card-empile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .midle-card {
+        height: 180px;
+        width: 325px;
+        background-color: white;
+        margin: 15px;
+        border-radius: 15px;
+        display: flex;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
+    }
+
+    .midle-card img {
+        width: 325px;
+        object-fit: cover;
+        height: 70%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 }
